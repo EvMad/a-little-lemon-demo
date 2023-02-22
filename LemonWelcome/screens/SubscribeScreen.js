@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { View } from 'react-native';
+import { ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform, Pressable  } from 'react-native';
 
-const SubscribeScreen = () => {
+const SubscribeScreen = (navigation) => {
   // Add subscribe screen code here
   return <View></View>;
 };
