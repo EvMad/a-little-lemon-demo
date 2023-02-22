@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { View, StyleSheet, Image, Pressable } from 'react-native';
 
+const green = '#495E57';
+const yellow = '#F4CE14';
+
 const WelcomeScreen = ({ navigation }) => {
   
   return(
@@ -15,7 +18,8 @@ const WelcomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
 
   container: {
-    flex: 1,       
+    flex: 0.8, 
+    backgroundColor: yellow,      
   },
   logo: {
     height: 100,
@@ -27,13 +31,13 @@ const styles = StyleSheet.create({
     padding: 10,
     marginVertical: 8,
     margin: 40,
-    backgroundColor: '#EDEFEE',
-    borderColor: '#EDEFEE',
+    backgroundColor: green,
+    borderColor: green,
     borderWidth: 2,
     borderRadius: 12,
 },
 buttonText: {
-    color: '#333333',
+    color: '#fff',
     textAlign: 'center',
     fontSize: 32,
 },
