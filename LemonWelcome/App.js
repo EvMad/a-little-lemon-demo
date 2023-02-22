@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from "./navigators/RootNavigator";
 
 
 const green = '#495E57';
@@ -13,7 +14,7 @@ export default function App() {
    <>
    
 <NavigationContainer>
-  
+
 </NavigationContainer>
    
    </>
