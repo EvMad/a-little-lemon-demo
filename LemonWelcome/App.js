@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { Ionicons } from '@expo/vector-icons';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import SubscribeScreen from "../screens/SubscribeScreen";
@@ -24,14 +22,14 @@ function LogoTitle() {
 export default function App() {
   return (
    <>
-   <NavigationContainer>
+   
    <View style={styles.container}>
        <Stack.Navigator name="Welcome" component={WelcomeScreen} options={{ title: 'Home', headerTitle: (props) => <LogoTitle {...props} />,}}>
      <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="Subscribe" component={SubscribeScreen} />
     </Stack.Navigator>
     </View>
-   </NavigationContainer>
+   
    </>
   );
 }
