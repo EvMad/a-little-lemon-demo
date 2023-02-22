@@ -5,6 +5,8 @@ import SubscribeScreen from "../screens/SubscribeScreen";
 
 const Stack = createNativeStackNavigator();
 
+
+
 function LogoTitle() {
     return <Image source={require('./assets/little-lemon-logo.png')} style={{
       height: 40,
