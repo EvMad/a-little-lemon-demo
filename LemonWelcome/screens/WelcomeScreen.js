@@ -11,6 +11,9 @@ const WelcomeScreen = ({ navigation }) => {
     <View>
     <Image source={require("./assets/little-lemon-logo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
     </View>
+    <Pressable onPress={() => navigation.navigate("Subscribe")}>
+        <Text style={styles.buttonText}>Subscribe</Text>
+        </Pressable>
     </>
   );
 };
