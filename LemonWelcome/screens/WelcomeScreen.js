@@ -9,7 +9,7 @@ const WelcomeScreen = ({ navigation }) => {
   return(
     <>
     <View>
-    <Image source={require("./assets/little-lemon-logo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
+    <Image source={require("../assets/little-lemon-logo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
     </View>
     <Text style={styles.bodyText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
     <Pressable onPress={() => navigation.navigate("Subscribe")}>
