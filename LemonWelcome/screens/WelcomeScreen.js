@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Image, Pressable } from 'react-native';
+import { View, StyleSheet, Image, Pressable, Text } from 'react-native';
 
 const green = '#495E57';
 const yellow = '#F4CE14';
