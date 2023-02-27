@@ -5,32 +5,25 @@ import Button from "../components/Button";
 import {validateEmail} from "../utils";
 
 const SubscribeScreen = (navigation) => {
-  const [showButton, setShowButton] = useState(false);
+ 
     const [email, onChangeEmail] = React.useState('');
-  // Add subscribe screen code here
+
+    const isEmailValid = validateEmail(email);
+
+  
   return (
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ScrollView>
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
             
-        {!showButton && (
-          <>
-          <Text style={styles.regularText}>Sign Up for the Newsletter </Text>
-            <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} keyboardType={'email-address'} placeholder="email" />
-          
-          <Pressable style={styles.button} onPress={() => {setShowButton(!showButton)}}>
-        <Text style={styles.buttonText}>Sign Up</Text>
-        </Pressable>
-          </>        
-        )}
-        {showButton && (
-          <>
-          <Text style={styles.infoSection}>You are Signed Up!</Text>
-          <Pressable onPress={() => navigation.navigate("Welcome")} style={styles.button}>
-        <Text style={styles.buttonText}>Proceed to Home</Text>
-        </Pressable>
-          </>
-        )}
+            <Button
+        onPress={() => {
+          Alert.alert("Thanks for subscribing, stay tuned!");
+        }}
+        disabled={!isEmailValid}
+      >
+        Subscribe
+      </Button>
         </ScrollView>
     </KeyboardAvoidingView>
   );
