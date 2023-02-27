@@ -6,7 +6,7 @@ import {validateEmail} from "../utils";
 
 const SubscribeScreen = (navigation) => {
  
-    const [email, onChangeEmail] = React.useState('');
+    const [email, setEmail] = React.useState('');
 
     const isEmailValid = validateEmail(email);
 
@@ -15,6 +15,14 @@ const SubscribeScreen = (navigation) => {
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ScrollView>
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
+            <TextInput
+        style={styles.input}
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        textContentType="emailAddress"
+        placeholder={"Type your email"}
+      />
             
             <Button
         onPress={() => {
