@@ -22,7 +22,7 @@ const WelcomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
 
   container: {
-    flex: 0.8, 
+    flex: 1, 
     backgroundColor: yellow,      
   },
   logo: {
