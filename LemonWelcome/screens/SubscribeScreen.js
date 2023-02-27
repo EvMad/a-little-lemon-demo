@@ -24,7 +24,7 @@ const SubscribeScreen = (navigation) => {
         {showButton && (
           <>
           <Text style={styles.infoSection}>You are Signed Up!</Text>
-          <Pressable onPress={() => navigation.navigate("Welcome")}>
+          <Pressable onPress={() => navigation.navigate("Welcome")} style={styles.button}>
         <Text style={styles.buttonText}>Proceed to Home</Text>
         </Pressable>
           </>
