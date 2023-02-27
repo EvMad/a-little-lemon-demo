@@ -4,6 +4,8 @@ import { Alert, ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, P
 import Button from "../components/Button";
 import {validateEmail} from "../utils";
 
+const green = '#495E57';
+
 const SubscribeScreen = (navigation) => {
  
     const [email, setEmail] = React.useState('');
@@ -14,6 +16,7 @@ const SubscribeScreen = (navigation) => {
   return (
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ScrollView>
+        <Image source={require("../assets/little-lemon-logo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
             <TextInput
         style={styles.input}
@@ -44,7 +47,7 @@ const styles = StyleSheet.create({
   headerText: {
     padding: 40,
     fontSize: 30,
-    color: '#EDEFEE',
+    color: green,
     textAlign: 'center',
   },
   regularText: {
@@ -62,6 +65,11 @@ const styles = StyleSheet.create({
       fontSize: 16,
       borderColor: '#EDEFEE',
       backgroundColor: '#F4CE14',
+  },
+  logo: {
+    height: 100,
+    width: 100,
+    borderRadius: 20,
   },
   button: {
     fontSize: 22,
