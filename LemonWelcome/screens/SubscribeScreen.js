@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Alert, ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform, Pressable  } from 'react-native';
+import Button from "../components/Button";
+import {validateEmail} from "../utils";
 
 const SubscribeScreen = (navigation) => {
   const [showButton, setShowButton] = useState(false);
