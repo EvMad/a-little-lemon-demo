@@ -13,4 +13,22 @@ const Button = ({onPress, children, disabled}) => {
     );
 };
 
+const styles = StyleSheet.create({
+    buttonWrapper: {
+      borderRadius: 8,
+      backgroundColor: '#495E57',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      padding: 8,
+    },
+    disabled: {
+      backgroundColor: 'grey',
+      opacity: 0.5,
+    },
+    text: {
+      fontSize: 16,
+      color: 'white',
+    }
+  });
+
 export default Button;
