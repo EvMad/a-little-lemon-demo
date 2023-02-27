@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, StyleSheet, Image, Pressable, Text } from 'react-native';
+import Button from "../components/Button";
 
 const green = '#495E57';
 const yellow = '#F4CE14';
